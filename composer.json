@@ -61,7 +61,7 @@
 			"php artisan clear-compiled",
 			"php artisan optimize",
 			"chmod -R 777 public/"
-		],
+		]
     },
     "config": {
         "preferred-install": "dist",
@@ -69,6 +69,6 @@
         "optimize-autoloader": true
     },
     "minimum-stability": "dev",
-    "prefer-stable": true,
+    "prefer-stable": true
 	
 }
