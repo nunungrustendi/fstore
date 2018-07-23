@@ -63,7 +63,7 @@
 			"php artisan storage:link",
 			"chmod -R 777 storage/",
 			"chmod -R 777 public/",
-			"chmod -R 777 public/storage",
+			"chmod -R 777 public/storage"
 		]
     },
     "config": {
