@@ -16,7 +16,8 @@
         "laravel/tinker": "^1.0",
         "laravelcollective/html": "^5.6",
         "phpdocumentor/graphviz": "^1.0",
-        "twbs/bootstrap": "4.1.1"
+        "twbs/bootstrap": "4.1.1",
+		"ext-imagick":"*"
     },
     "require-dev": {
         "beyondcode/laravel-er-diagram-generator": "^0.2.3",
@@ -59,8 +60,10 @@
         ],
 		"post-install-cmd":[
 			"php artisan clear-compiled",
+			"php artisan storage:link",
 			"chmod -R 777 storage/",
-			"chmod -R 777 public/"
+			"chmod -R 777 public/",
+			"chmod -R 777 public/storage",
 		]
     },
     "config": {
