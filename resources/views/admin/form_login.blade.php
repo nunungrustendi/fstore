@@ -12,6 +12,7 @@
 		</div>
 		<div class="col-md-6">
 			{{ Form::open(['url'=>'admin/'])}}
+			    @csrf
 				<div class="form-group">
 					{{Form::label('name','Nama Pengguna')}}
 					{{Form::text('name','',['class'=>'form-control'])}}

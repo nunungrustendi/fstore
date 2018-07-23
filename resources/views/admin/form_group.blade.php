@@ -48,7 +48,7 @@
 	<h4>Data Group</h4>
 	<hr>
 	{{ Form::model($group,['method'=>$method,'url'=>$url,'files'=>true])}}
-
+        @csrf
 		<div class="form-group">
 		
 			{{Form::label('nama','Nama Group')}}
@@ -114,7 +114,7 @@
 			</div>
 		</div>
 		
-		<hr><button class="btn btn-outline-primary" type="submit" onclick="selectAllProduct()"><img width="24" height="24" src="/icon/save_icon.svg"></button><hr>
+		<hr><button class="btn btn-outline-primary" type="submit" onclick="selectAllProduct()"><img width="24" height="24" src={{asset("/icon/save_icon.svg")}}></button><hr>
 		
 
 	{{ Form::close()}}

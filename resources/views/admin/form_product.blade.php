@@ -10,6 +10,7 @@
 
 	<h4>Data Produk</h4>
 	{{ Form::model($product,['method'=>$method,'url'=>$url,'files'=>true])}}
+	    @csrf
 		<div class="row">
 				<div class="col form-group">
 					{{Form::label('kategori_id','Kategori')}}
@@ -63,7 +64,7 @@
 		</div>
 			
 		<hr>
-			<button class="btn btn-outline-primary" type='submit'><img width="24" height="24" src="/icon/save_icon.svg"></button>
+			<button class="btn btn-outline-primary" type='submit'><img width="24" height="24" src={{asset("/icon/save_icon.svg")}}></button>
 		<hr>
 
 	{{ Form::close()}}

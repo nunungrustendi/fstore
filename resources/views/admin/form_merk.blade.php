@@ -11,7 +11,7 @@
 	<h4>Data Merk</h4>
 	<hr>
 	{{ Form::model($merk,['method'=>$method,'url'=>$url,'files'=>true])}}
-
+        @csrf
 		<div class="form-group">
 			{{Form::label('nama','Nama Merk')}}
 			{{Form::text('nama',$merk->name,['class'=>'form-control'])}}
@@ -39,7 +39,7 @@
 		
 		
 		
-		<hr><button class="btn btn-outline-primary" type='submit'><img width="24" height="24" src="/icon/save_icon.svg"></button><hr>
+		<hr><button class="btn btn-outline-primary" type='submit'><img width="24" height="24" src={{asset("/icon/save_icon.svg")}}></button><hr>
 
 	{{ Form::close()}}
 	@foreach($errors->all() as $message)

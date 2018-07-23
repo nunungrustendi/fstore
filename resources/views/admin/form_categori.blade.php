@@ -13,7 +13,7 @@
 	<h4>Data Kategori</h4>
 	<hr>
 	{{ Form::model($kategori,['method'=>$method,'url'=>$url,'files'=>true])}}
-
+        @csrf
 		<div class="form-group">
 			{{Form::label('nama','Nama Kategori')}}
 			{{Form::text('nama',$kategori->nama,['class'=>'form-control'])}}
@@ -40,7 +40,7 @@
 		</div>
 		
 		
-		<hr><button class="btn btn-outline-primary" type='submit'><img width="24" height="24" src="/icon/save_icon.svg"></button><hr>
+		<hr><button class="btn btn-outline-primary" type='submit'><img width="24" height="24" src={{asset("/icon/save_icon.svg")}}></button><hr>
 
 	{{ Form::close()}}
 	

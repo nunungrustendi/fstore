@@ -11,7 +11,7 @@
 |
 */
 
-
+//use Artisan;
 use App\Produk as Prd;
 use App\Kategori as Kateg;
 use App\Merk;
@@ -22,7 +22,18 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/admin','AdminController@admin')->name('admin');
+/*Route::get('/install',function()
+                    {//\Artisan::call('migrate');
+                   //  symlink('/home/forisbra/public_html/laravel/storage/app///public/','/home/forisbra/public_html/laravel/public///storage/');
+                //   \Artisan::call('storage:link');
+               // \Artisan::call('optimize');
+           //     \Artisan::call('cache:clear');
+            //    \Artisan::call('config:clear');
+             //   \Artisan::call('view:clear');
 
+                        
+                    });
+*/
 
 Route::get('admin/category','categoryController@index')->name('admincategory');
 Route::get('admin/category/formshow','categoryController@formShow');

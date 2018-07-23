@@ -10,7 +10,7 @@
 		
 	<h5 class="h5 align text-centre">Tabel Kategori Produk</h5>
 	<hr>
-		<a href="{{url('admin/category/formshow')}}" class="btn btn-outline-primary"><span><img width="24" height="24" src="/icon/add_icon.svg"></span>Tambah Data</a>
+		<a href="{{url('admin/category/formshow')}}" class="btn btn-outline-primary"><span><img width="24" height="24" src={{asset("/icon/add_icon.svg")}}></span>Tambah Data</a>
 	<hr>
 	<table class="table table-hover table-striped">
 	  <thead style="background-color:steelblue">
@@ -31,8 +31,8 @@
 					<td class="align-middle text-center">{{$cate->nama}}</td>
 					<td class="align-middle text-center">{{$cate->detail}}</td>
 					<td class="align-middle ">
-						<a href="{{url('admin/category/update/'.$cate->id)}}"  class="btn btn-outline-primary btn-sm"><img width="24" height="24" src="/icon/edit_icon.svg"></a>		
-						<a href="#{{$cate->id}}" role="button" class="btn btn-outline-danger btn-sm" data-toggle="modal"><img width="24" height="24" src="/icon/delete_icon.svg"></a>	</td>
+						<a href="{{url('admin/category/update/'.$cate->id)}}"  class="btn btn-outline-primary btn-sm"><img width="24" height="24" src={{asset("/icon/edit_icon.svg")}}></a>		
+						<a href="#{{$cate->id}}" role="button" class="btn btn-outline-danger btn-sm" data-toggle="modal"><img width="24" height="24" src={{asset("/icon/delete_icon.svg")}}></a>	</td>
 						<!-- Modal --> 
 								<div id="{{$cate->id}}" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">  
 									<div class="modal-dialog">

@@ -12,7 +12,7 @@
 	
 	
 	<hr>
-		<a href="{{url('admin/merk/formshow')}}" class="btn btn-outline-primary"><img width="24" height="24" src="/icon/add_icon.svg">Tambah Data</a>
+		<a href="{{url('admin/merk/formshow')}}" class="btn btn-outline-primary"><img width="24" height="24" src={{asset("/icon/add_icon.svg")}}>Tambah Data</a>
 	<hr>
 	
 	<table class="table table-hover table-striped">
@@ -34,8 +34,8 @@
 					<td class="align-middle text-center">{{$mr->nama}}</td>
 					<td class="align-middle text-center">{{$mr->detail}}</td>
 					<td class="align-middle">
-						<a href="{{url('admin/merk/update/'.$mr->id)}}"  class="btn btn-outline-primary btn-sm"><img width="24" height="24" src="/icon/edit_icon.svg"></a>		
-						<a href="#{{$mr->id}}" role="button" class="btn btn-outline-danger btn-sm" data-toggle="modal"><img width="24" height="24" src="/icon/delete_icon.svg"></a>	</td>
+						<a href="{{url('admin/merk/update/'.$mr->id)}}"  class="btn btn-outline-primary btn-sm"><img width="24" height="24" src={{asset("/icon/edit_icon.svg")}}></a>		
+						<a href="#{{$mr->id}}" role="button" class="btn btn-outline-danger btn-sm" data-toggle="modal"><img width="24" height="24" src={{asset("/icon/delete_icon.svg")}}></a>	</td>
 						<!-- Modal --> 
 								<div id="{{$mr->id}}" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">  
 									<div class="modal-dialog">

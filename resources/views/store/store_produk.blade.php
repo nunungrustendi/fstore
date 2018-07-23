@@ -134,9 +134,9 @@
 			
 			<div class="row mt-2 p-2" style="background-color:beige">
 				<div class="col">Bagikan :</div>
-				<div class="col"><a style="color:teal" target="_blank" href="https://wa.me/?text=FORIS%20brand:%20%0d{{url()->current()}}"><img width="24" height="24" src={{asset("/icon/whatsapp_icon.svg")}}></a></div>								
+				<div class="col"><a style="color:teal" target="_blank" href="https://wa.me/?text=FORIS brand%0d"><img width="24" height="24" src={{asset("/icon/whatsapp_icon.svg")}}></a></div>								
 				<div class="col fb-share-button" data-href="{{url()->current()}}" data-layout="button_count">fb</div>
-				<div class="col"><a style="color:teal" target="_blank" href="mailto:?subject=FORISbrand&body={{url()->current()}}" title="email"><img width="24" height="24" src={{asset("/icon/mail_color_icon.svg")}}></a></div>
+				<div class="col"><a style="color:teal" target="_blank" href="https://mail.google.com/"><img width="24" height="24" src={{asset("/icon/mail_color_icon.svg")}}></a></div>
 			</div>
 			
 			<!-- Your share button code -->

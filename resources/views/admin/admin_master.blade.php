@@ -68,16 +68,16 @@
 			<div class="row" style="background-color:beige; min-height:80px;">
 				
 				<span class="col-4 d-inline-block ">
-						<span class="align-middle"><img src="/images/logo_foris.png">@2018</span>
+						<span class="align-middle"><img src={{asset("/images/logo_foris.png")}}>@2018</span>
 				</span>
 				<div class="col-8">
 						<div class="row pl-2" style="color:teal">
 							Kontak:
 						</div>
 						<div class="row mt-2">
-								<div class="col"><a style="color:teal" target="_blank" href="https://wa.me/?text=FORIS brand%0d"><img width="24" height="24" src="/icon/whatsapp_icon.svg">&nbsp;Whatsapp</a></div>								
-								<div class="col"><a style="color:teal" target="_blank" href="https://www.facebook.com/"><img width="24" height="24" src="/icon/facebook_icon.svg">&nbsp;Facebook</a></div>
-								<div class="col"><a style="color:teal" target="_blank" href="https://mail.google.com/"><img width="24" height="24" src="/icon/mail_color_icon.svg">&nbsp;E-mail</a></div>
+								<div class="col"><a style="color:teal" target="_blank" href="https://wa.me/?text=FORIS brand%0d"><img width="24" height="24" src={{asset("/icon/whatsapp_icon.svg")}}>&nbsp;Whatsapp</a></div>								
+								<div class="col"><a style="color:teal" target="_blank" href="https://www.facebook.com/"><img width="24" height="24" src={{asset("/icon/facebook_icon.svg")}}>&nbsp;Facebook</a></div>
+								<div class="col"><a style="color:teal" target="_blank" href="https://mail.google.com/"><img width="24" height="24" src={{asset("/icon/mail_color_icon.svg")}}>&nbsp;E-mail</a></div>
 						</div>	
 				</div>
 			</div>
